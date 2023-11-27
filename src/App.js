@@ -25,7 +25,7 @@ function App() {
     <div className="App">
       <input type="text" onChange={(e) => SetId(e.target.value)} />
       <button onClick={() => fetchToDoById(id)}>fetch</button>
-      {loading && <h1>LOADING !!!</h1>}
+      {loading && <h1>LOADING!!!</h1>}
       {error && <p>{error}</p>}
 
       {todo && <h1>Title : {todo.title} </h1>}
